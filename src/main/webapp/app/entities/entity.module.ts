@@ -7,6 +7,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'antecedents',
         loadChildren: './antecedents/antecedents.module#AntecedentsModule'
+      },
+      {
+        path: 'traitements-en-cours',
+        loadChildren: './traitements-en-cours/traitement-en-cours.module#TraitementEnCoursModule'
       }
     ])
   ],
