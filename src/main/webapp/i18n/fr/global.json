@@ -13,7 +13,8 @@
       "dossierMedical": {
         "antecedents": "Antécédents",
         "traitementsEnCours": "Traitements en cours",
-        "ficheUrgence": "Fiche d'urgence"
+        "ficheUrgence": "Fiche d'urgence",
+        "suivi": "Suivi SED"
       },
       "account": {
         "main": "Compte",
