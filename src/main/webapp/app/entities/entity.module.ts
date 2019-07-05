@@ -31,6 +31,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'traitement',
         loadChildren: './traitement/traitement.module#TraitementModule'
+      },
+      {
+        path: 'rendez-vous',
+        loadChildren: './rdv/rdv.module#RdvModule'
       }
     ])
   ],

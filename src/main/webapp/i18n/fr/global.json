@@ -20,7 +20,8 @@
       },
       "gererMonSED": {
         "symptomes": "Symptomes",
-        "traitement": "Traitement"
+        "traitement": "Traitement",
+        "rdv": "Rendez-vous"
       },
       "account": {
         "main": "Compte",
