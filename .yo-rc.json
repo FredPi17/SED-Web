@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sed.app",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "SED",
+    "packageName": "com.sed.app",
+    "packageFolder": "com/sed/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjQ4ZWE0M2UyNzBiYTBjY2E3ZmMxM2QwMTc1ZDJiMjBiNjI4MDg2NmZhOTdkNjI3ZjE3NTExYzU1YTc0YmVkYTIxMDJlN2NiMWIxZjRmYWRmNDgzODMyNzcxMTJlNWY5MWNiM2NmOTdjMDJiODcwNDRmODAxMTM2MWMzZDZhOGE=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "yeti",
+    "clientThemeVariant": "light",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"]
+  }
+}
