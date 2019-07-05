@@ -12,7 +12,8 @@
       },
       "dossierMedical": {
         "antecedents": "Antécédents",
-        "traitementsEnCours": "Traitements en cours"
+        "traitementsEnCours": "Traitements en cours",
+        "ficheUrgence": "Fiche d'urgence"
       },
       "account": {
         "main": "Compte",
