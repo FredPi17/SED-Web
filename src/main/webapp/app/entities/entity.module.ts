@@ -27,6 +27,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'symptomes',
         loadChildren: './symptomes/symptomes.module#SymptomesModule'
+      },
+      {
+        path: 'traitement',
+        loadChildren: './traitement/traitement.module#TraitementModule'
       }
     ])
   ],

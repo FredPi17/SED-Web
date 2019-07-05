@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Routes } from '@angular/router';
 import { UserRouteAccessService } from 'app/core';
-import { SymptomesComponent } from 'app/entities/symptomes/symptomes.component';
+import { TraitementComponent } from 'app/entities/traitement/traitement.component';
 
 @Injectable({ providedIn: 'root' })
-export class SymptomesRoute {}
+export class TraitementRoute {}
 
-export const symptomesRoute: Routes = [
+export const traitementRoute: Routes = [
   {
     path: '',
-    component: SymptomesComponent,
+    component: TraitementComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'global.menu.gererMonSED.symptomes'
+      pageTitle: 'global.menu.gererMonSED.traitement'
     },
     canActivate: [UserRouteAccessService]
   }

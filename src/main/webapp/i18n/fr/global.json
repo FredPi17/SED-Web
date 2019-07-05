@@ -19,7 +19,8 @@
         "dmp": "DMP"
       },
       "gererMonSED": {
-        "symptomes": "Symptomes"
+        "symptomes": "Symptomes",
+        "traitement": "Traitement"
       },
       "account": {
         "main": "Compte",
