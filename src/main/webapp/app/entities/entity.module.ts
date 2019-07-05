@@ -35,6 +35,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'rendez-vous',
         loadChildren: './rdv/rdv.module#RdvModule'
+      },
+      {
+        path: 'repercussions',
+        loadChildren: './repercussions/repercussions.module#RepercussionsModule'
       }
     ])
   ],
