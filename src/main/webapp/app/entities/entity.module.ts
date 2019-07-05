@@ -39,6 +39,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'repercussions',
         loadChildren: './repercussions/repercussions.module#RepercussionsModule'
+      },
+      {
+        path: 'therapeutique',
+        loadChildren: './therapeutique/therapeutique.module#TherapeutiqueModule'
       }
     ])
   ],
