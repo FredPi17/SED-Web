@@ -14,7 +14,8 @@
         "antecedents": "Antécédents",
         "traitementsEnCours": "Traitements en cours",
         "ficheUrgence": "Fiche d'urgence",
-        "suivi": "Suivi SED"
+        "suivi": "Suivi SED",
+        "dmp": "DMP"
       },
       "account": {
         "main": "Compte",

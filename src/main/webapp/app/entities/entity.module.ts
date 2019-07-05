@@ -19,6 +19,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'suivi',
         loadChildren: './suivi/suivi.module#SuiviModule'
+      },
+      {
+        path: 'dmp',
+        loadChildren: './dmp/dmp.module#DmpModule'
       }
     ])
   ],
