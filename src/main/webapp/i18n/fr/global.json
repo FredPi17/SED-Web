@@ -11,7 +11,8 @@
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "dossierMedical": {
-        "antecedents": "Antécédents"
+        "antecedents": "Antécédents",
+        "traitementsEnCours": "Traitements en cours"
       },
       "account": {
         "main": "Compte",
