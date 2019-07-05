@@ -23,6 +23,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'dmp',
         loadChildren: './dmp/dmp.module#DmpModule'
+      },
+      {
+        path: 'symptomes',
+        loadChildren: './symptomes/symptomes.module#SymptomesModule'
       }
     ])
   ],

@@ -7,6 +7,7 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "dossierMedical": "Dossier médical",
+        "gererMonSED": "Gérer mon SED",
         "main": "Entités",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
@@ -16,6 +17,9 @@
         "ficheUrgence": "Fiche d'urgence",
         "suivi": "Suivi SED",
         "dmp": "DMP"
+      },
+      "gererMonSED": {
+        "symptomes": "Symptomes"
       },
       "account": {
         "main": "Compte",
