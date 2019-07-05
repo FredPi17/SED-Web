@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FicheUrgenceComponent } from './fiche-urgence/fiche-urgence.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,10 @@ import { FicheUrgenceComponent } from './fiche-urgence/fiche-urgence.component';
       {
         path: 'fiche-urgence',
         loadChildren: './fiche-urgence/fiche-urgence.module#FicheUrgenceModule'
+      },
+      {
+        path: 'suivi',
+        loadChildren: './suivi/suivi.module#SuiviModule'
       }
     ])
   ],
