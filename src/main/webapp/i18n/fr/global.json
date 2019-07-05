@@ -6,8 +6,12 @@
       "home": "Accueil",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
+        "dossierMedical": "Dossier médical",
         "main": "Entités",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "dossierMedical": {
+        "antecedents": "Antécédents"
       },
       "account": {
         "main": "Compte",
