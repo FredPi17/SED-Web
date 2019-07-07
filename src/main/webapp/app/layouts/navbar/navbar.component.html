@@ -30,14 +30,12 @@
                     <li>
                         <a class="dropdown-item" routerLink="antecedents" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span jhiTranslate="global.menu.dossierMedical.antecedents">Antecedents</span>
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item" routerLink="traitements-en-cours" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.dossierMedical.traitementsEnCours">Traitement en cours</span>
                         </a>
@@ -45,7 +43,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="fiche-urgence" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.dossierMedical.ficheUrgence">Fiche d'urgence</span>
                         </a>
@@ -53,7 +50,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="suivi" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.dossierMedical.suivi">Suivi SED</span>
                         </a>
@@ -61,7 +57,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="dmp" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.dossierMedical.dmp">DMP</span>
                         </a>
@@ -83,7 +78,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="symptomes" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.gererMonSED.symptomes">Symptomes</span>
                         </a>
@@ -91,7 +85,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="traitement" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.gererMonSED.traitement">Traitement</span>
                         </a>
@@ -99,7 +92,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="rendez-vous" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.gererMonSED.rdv">Rendez-vous</span>
                         </a>
@@ -107,7 +99,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="repercussions" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.gererMonSED.repercussions">Repercussions</span>
                         </a>
@@ -115,13 +106,13 @@
                     <li>
                         <a class="dropdown-item" routerLink="therapeutique" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span jhiTranslate="global.menu.gererMonSED.therapeutique">Thérapeutique</span>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <li *ngSwitchCase="true" class="nav-item" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="alertes" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="bell"></fa-icon>
@@ -134,7 +125,7 @@
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);"
                    id="InfosSed-menu">
                     <span>
-                       <i class="fal fa-info-square"></i>
+                       <fa-icon icon="th-list"></fa-icon>
                         <span jhiTranslate="global.menu.entities.InfosSed">
                             Infos SED
                         </span>
@@ -144,7 +135,6 @@
                     <li>
                         <a class="dropdown-item" routerLink="presentation" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.InfosSed.presentation">Présentation</span>
                         </a>
@@ -152,17 +142,16 @@
                     <li>
                         <a class="dropdown-item" routerLink="articles" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span
                                 jhiTranslate="global.menu.InfosSed.articles">Articles</span>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <li *ngSwitchCase="true" class="nav-item" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="faq" (click)="collapseNavbar()">
                     <span>
-                        <i class="fas fa-question"></i>
                         <span jhiTranslate="global.menu.faq">FAQ</span>
                     </span>
                 </a>
