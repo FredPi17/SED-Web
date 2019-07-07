@@ -55,6 +55,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'articles',
         loadChildren: './articles/articles.module#ArticlesModule'
+      },
+      {
+        path: 'faq',
+        loadChildren: './faq/faq.module#FaqModule'
       }
     ])
   ],
