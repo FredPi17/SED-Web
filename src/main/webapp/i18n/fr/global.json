@@ -9,6 +9,7 @@
       "entities": {
         "dossierMedical": "Dossier médical",
         "gererMonSED": "Gérer mon SED",
+        "InfosSed": "Infos SED",
         "main": "Entités",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
@@ -25,6 +26,10 @@
         "rdv": "Rendez-vous",
         "repercussions": "Répercussions",
         "therapeutique": "Thérapeutique"
+      },
+      "InfosSed": {
+        "presentation": "Présentation",
+        "articles": "Articles"
       },
       "account": {
         "main": "Compte",

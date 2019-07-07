@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { PresentationComponent } from './presentation/presentation.component';
 
 @NgModule({
   imports: [
@@ -48,10 +47,18 @@ import { PresentationComponent } from './presentation/presentation.component';
       {
         path: 'alertes',
         loadChildren: './alertes/alertes.module#AlertesModule'
+      },
+      {
+        path: 'presentation',
+        loadChildren: './presentation/presentation.module#PresentationModule'
+      },
+      {
+        path: 'articles',
+        loadChildren: './articles/articles.module#ArticlesModule'
       }
     ])
   ],
-  declarations: [PresentationComponent],
+  declarations: [],
   entryComponents: [],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
