@@ -1,5 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { PresentationComponent } from './presentation/presentation.component';
 
 @NgModule({
   imports: [
@@ -50,7 +51,7 @@ import { RouterModule } from '@angular/router';
       }
     ])
   ],
-  declarations: [],
+  declarations: [PresentationComponent],
   entryComponents: [],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
