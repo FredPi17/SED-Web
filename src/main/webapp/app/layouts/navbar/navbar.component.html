@@ -124,7 +124,7 @@
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="alertes" (click)="collapseNavbar()">
                     <span>
-                        <fa-icon icon="home"></fa-icon>
+                        <fa-icon icon="bell"></fa-icon>
                         <span jhiTranslate="global.menu.alertes">Alertes</span>
                     </span>
                 </a>
@@ -134,7 +134,7 @@
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);"
                    id="InfosSed-menu">
                     <span>
-                        <fa-icon icon="th-list"></fa-icon>
+                       <i class="fal fa-info-square"></i>
                         <span jhiTranslate="global.menu.entities.InfosSed">
                             Infos SED
                         </span>
@@ -158,6 +158,14 @@
                         </a>
                     </li>
                 </ul>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="faq" (click)="collapseNavbar()">
+                    <span>
+                        <i class="fas fa-question"></i>
+                        <span jhiTranslate="global.menu.faq">FAQ</span>
+                    </span>
+                </a>
             </li>
             <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">
