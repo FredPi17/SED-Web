@@ -43,6 +43,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'therapeutique',
         loadChildren: './therapeutique/therapeutique.module#TherapeutiqueModule'
+      },
+      {
+        path: 'alertes',
+        loadChildren: './alertes/alertes.module#AlertesModule'
       }
     ])
   ],
