@@ -21,6 +21,7 @@ import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 import { AntecedentsComponent } from 'app/entities/antecedents/antecedents.component';
+import { DigestiveComponent } from './symptomes/digestive/digestive.component';
 
 @NgModule({
   imports: [
@@ -41,7 +42,15 @@ import { AntecedentsComponent } from 'app/entities/antecedents/antecedents.compo
     SedEntityModule,
     SedAppRoutingModule
   ],
-  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [
+    JhiMainComponent,
+    NavbarComponent,
+    ErrorComponent,
+    PageRibbonComponent,
+    ActiveMenuDirective,
+    FooterComponent,
+    DigestiveComponent
+  ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
