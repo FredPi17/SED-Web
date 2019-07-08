@@ -14,14 +14,12 @@ import { NotificationInterceptor } from './blocks/interceptor/notification.inter
 import { SedSharedModule } from 'app/shared';
 import { SedCoreModule } from 'app/core';
 import { SedAppRoutingModule } from './app-routing.module';
-import { SedHomeModule } from './home/home.module';
+import { SedHomeModule } from 'app/home';
 import { SedAccountModule } from './account/account.module';
 import { SedEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
-import { AntecedentsComponent } from 'app/entities/antecedents/antecedents.component';
-import { DigestiveComponent } from './symptomes/digestive/digestive.component';
 
 @NgModule({
   imports: [
@@ -42,15 +40,7 @@ import { DigestiveComponent } from './symptomes/digestive/digestive.component';
     SedEntityModule,
     SedAppRoutingModule
   ],
-  declarations: [
-    JhiMainComponent,
-    NavbarComponent,
-    ErrorComponent,
-    PageRibbonComponent,
-    ActiveMenuDirective,
-    FooterComponent,
-    DigestiveComponent
-  ],
+  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

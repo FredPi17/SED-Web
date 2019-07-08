@@ -32,6 +32,9 @@
         "presentation": "Présentation",
         "articles": "Articles"
       },
+      "symptomes": {
+        "digestive": "Digestive"
+      },
       "account": {
         "main": "Compte",
         "settings": "Profil",

@@ -29,6 +29,66 @@ import { RouterModule } from '@angular/router';
         loadChildren: './symptomes/symptomes.module#SymptomesModule'
       },
       {
+        path: 'symptomes/digestive',
+        loadChildren: './symptomes/digestive/digestive.module#DigestiveModule'
+      },
+      {
+        path: 'symptomes/cardio-vasculaire',
+        loadChildren: './symptomes/cardiovasculaire/cardiovasculaire.module#CardiovasculaireModule'
+      },
+      {
+        path: 'symptomes/respiratoire',
+        loadChildren: './symptomes/respiratoire/respiratoire.module#RespiratoireModule'
+      },
+      {
+        path: 'symptomes/orl',
+        loadChildren: './symptomes/orl/orl.module#OrlModule'
+      },
+      {
+        path: 'symptomes/bucco-dentaire',
+        loadChildren: './symptomes/buccodentaire/buccodentaire.module#BuccodentaireModule'
+      },
+      {
+        path: 'symptomes/urinaire',
+        loadChildren: './symptomes/urinaire/urinaire.module#UrinaireModule'
+      },
+      {
+        path: 'symptomes/gynecologique',
+        loadChildren: './symptomes/gynecologique/gynecologique.module#GynecologiqueModule'
+      },
+      {
+        path: 'symptomes/musculaire',
+        loadChildren: './symptomes/musculaire/musculaire.module#MusculaireModule'
+      },
+      {
+        path: 'symptomes/articulation',
+        loadChildren: './symptomes/articulation/articulation.module#ArticulationModule'
+      },
+      {
+        path: 'symptomes/neurologique',
+        loadChildren: './symptomes/neurologique/neurologique.module#NeurologiqueModule'
+      },
+      {
+        path: 'symptomes/cognitive',
+        loadChildren: './symptomes/cognitive/cognitive.module#CognitiveModule'
+      },
+      {
+        path: 'symptomes/sommeil',
+        loadChildren: './symptomes/sommeil/sommeil.module#SommeilModule'
+      },
+      {
+        path: 'symptomes/cutanee',
+        loadChildren: './symptomes/cutanee/cutanee.module#CutaneeModule'
+      },
+      {
+        path: 'symptomes/ophtalmo',
+        loadChildren: './symptomes/ophtalmo/ophtalmo.module#OphtalmoModule'
+      },
+      {
+        path: 'symptomes/psychologique',
+        loadChildren: './symptomes/psychologique/psychologique.module#PsychologiqueModule'
+      },
+      {
         path: 'traitement',
         loadChildren: './traitement/traitement.module#TraitementModule'
       },
