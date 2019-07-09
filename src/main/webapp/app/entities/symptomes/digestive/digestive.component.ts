@@ -1,24 +1,58 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { DigestivesService } from 'app/entities/symptomes/digestive/digestives.service';
 import { Digestive } from 'app/shared/model/digestive';
 import { NgForm } from '@angular/forms';
 import { Account, AccountService } from 'app/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'jhi-digestive',
   templateUrl: './digestive.component.html',
-  styleUrls: ['./digestive.component.scss']
+  styleUrls: ['./digestive.component.scss'],
+  providers: [DatePipe]
 })
 export class DigestiveComponent implements OnInit {
   digestive: Digestive;
+  old?: Digestive;
   account: Account;
+  oldForm: boolean;
+  myDate = new Date();
+  id: number;
 
-  constructor(private accountService: AccountService, protected digestiveService: DigestivesService) {}
+  constructor(private datePipe: DatePipe, private accountService: AccountService, protected digestiveService: DigestivesService) {}
 
   ngOnInit() {
     this.accountService.identity().then((account: Account) => {
       this.account = account;
     });
+    this.getLastetForm();
+  }
+
+  getLastetForm() {
+    this.accountService.identity().then((account: Account) => {
+      this.account = account;
+      this.digestiveService
+        .getTheLatestData(this.account.id)
+        .toPromise()
+        .then(
+          callback => {
+            this.compareDates(callback);
+            this.id = callback.id;
+          },
+          error => {
+            console.log(error);
+          }
+        );
+    });
+  }
+
+  compareDates(callback: Digestive) {
+    this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+    console.log('date du jour: ' + this.myDate + '\n date bdd: ' + callback.dateDuJour);
+    callback.dateDuJour.includes(this.myDate) ? (this.oldForm = true) : (this.oldForm = false);
+    if (this.oldForm) {
+      this.old = callback;
+    }
   }
 
   onSubmit(form: NgForm) {
@@ -64,13 +98,26 @@ export class DigestiveComponent implements OnInit {
       form.value.vomissements
     );
 
-    this.digestiveService.postData(this.digestive).subscribe(
-      callback => {
-        console.log(callback);
-      },
-      err => {
-        console.log(err);
-      }
-    );
+    console.log(this.digestive);
+
+    if (this.oldForm) {
+      this.digestiveService.putData(this.digestive, this.id).subscribe(
+        callback => {
+          console.log(callback);
+        },
+        err => {
+          console.log(err);
+        }
+      );
+    } else {
+      this.digestiveService.postData(this.digestive).subscribe(
+        callback => {
+          console.log(callback);
+        },
+        err => {
+          console.log(err);
+        }
+      );
+    }
   }
 }

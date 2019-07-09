@@ -22,7 +22,15 @@ export class DigestivesService {
     return this.http.get<Digestive>(`${this.resourceUrl}`);
   }
 
+  getTheLatestData(id: number): Observable<Digestive> {
+    return this.http.get<Digestive>(`${this.resourceUrl}/${id}`);
+  }
+
   postData(digestive: Digestive): Observable<any> {
     return this.http.post<Digestive>(`${this.resourceUrl}`, digestive);
+  }
+
+  putData(digestive: Digestive, id: number): Observable<any> {
+    return this.http.put<Digestive>(`${this.resourceUrl}/${id}`, digestive);
   }
 }
