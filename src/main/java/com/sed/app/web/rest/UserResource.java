@@ -1,6 +1,5 @@
 package com.sed.app.web.rest;
 
-import com.google.common.base.Optional;
 import com.sed.app.config.Constants;
 import com.sed.app.domain.User;
 import com.sed.app.repository.UserRepository;
