@@ -13,10 +13,10 @@ import { DatePipe } from '@angular/common';
 })
 export class MusculaireComponent implements OnInit {
   musculaire: MusculaireModel;
-  old?: MusculaireModel;
+  old?: MusculaireModel = new MusculaireModel();
   account: Account;
   oldForm: boolean;
-  myDate = new Date();
+  myDate = new Date().toString();
   id: number;
 
   constructor(private datePipe: DatePipe, private accountService: AccountService, protected musculaireService: MusculaireService) {}
@@ -48,7 +48,9 @@ export class MusculaireComponent implements OnInit {
 
   compareDates(callback: MusculaireModel) {
     this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+    // @ts-ignore
     console.log('date du jour: ' + this.myDate + '\n date bdd: ' + callback.dateDuJour);
+    // @ts-ignore
     callback.dateDuJour.includes(this.myDate) ? (this.oldForm = true) : (this.oldForm = false);
     if (this.oldForm) {
       this.old = callback;

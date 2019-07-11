@@ -40,7 +40,7 @@ export interface IDigestive {
   idUtilisateur?: number;
 }
 
-export class DigestiveModel implements IDigestive {
+export class Digestive implements IDigestive {
   constructor(
     public absenceSatiete?: boolean,
     public aerophagie?: boolean,
