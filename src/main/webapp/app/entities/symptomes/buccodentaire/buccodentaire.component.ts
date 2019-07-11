@@ -13,10 +13,10 @@ import { DatePipe } from '@angular/common';
 })
 export class BuccodentaireComponent implements OnInit {
   buccodentaire: BuccodentaireModel;
-  old?: BuccodentaireModel;
+  old?: BuccodentaireModel = new BuccodentaireModel();
   account: Account;
   oldForm: boolean;
-  myDate = new Date();
+  myDate = new Date().toString();
   id: number;
 
   constructor(private datePipe: DatePipe, private accountService: AccountService, protected buccodentaireService: BuccodentaireService) {}

@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class BuccodentaireService {
-  public resourceUrl = SERVER_API_URL_MYSQL + '/api/manifestationDigestive';
+  public resourceUrl = SERVER_API_URL_MYSQL + '/api/ManifestationBuccoDent';
 
   constructor(protected http: HttpClient) {}
 
