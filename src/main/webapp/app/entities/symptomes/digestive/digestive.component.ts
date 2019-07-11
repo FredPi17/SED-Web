@@ -1,6 +1,6 @@
 import { Component, DoCheck, OnInit } from '@angular/core';
 import { DigestivesService } from 'app/entities/symptomes/digestive/digestives.service';
-import { Digestive } from 'app/shared/model/digestive';
+import { DigestiveModel } from 'app/shared/model/digestive.model';
 import { NgForm } from '@angular/forms';
 import { Account, AccountService } from 'app/core';
 import { DatePipe } from '@angular/common';
@@ -47,7 +47,7 @@ export class DigestiveComponent implements OnInit {
     });
   }
 
-  compareDates(callback: Digestive) {
+  compareDates(callback: DigestiveModel) {
     this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
     // @ts-ignore
     console.log('date du jour: ' + this.myDate + '\n date bdd: ' + callback.dateDuJour);
@@ -59,7 +59,7 @@ export class DigestiveComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    this.digestive = new Digestive(
+    this.digestive = new DigestiveModel(
       form.value.absenceSatiete,
       form.value.aerophagie,
       form.value.amaigrissement,

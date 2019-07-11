@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SERVER_API_URL_MYSQL } from 'app/app.constants';
 import { Observable } from 'rxjs';
-import { Digestive } from 'app/shared/model/digestive';
+import { DigestiveModel } from 'app/shared/model/digestive.model';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -18,19 +18,19 @@ export class DigestivesService {
 
   constructor(protected http: HttpClient) {}
 
-  getData(): Observable<Digestive> {
-    return this.http.get<Digestive>(`${this.resourceUrl}`);
+  getData(): Observable<DigestiveModel> {
+    return this.http.get<DigestiveModel>(`${this.resourceUrl}`);
   }
 
-  getTheLatestData(id: number): Observable<Digestive> {
-    return this.http.get<Digestive>(`${this.resourceUrl}/${id}`);
+  getTheLatestData(id: number): Observable<DigestiveModel> {
+    return this.http.get<DigestiveModel>(`${this.resourceUrl}/${id}`);
   }
 
-  postData(digestive: Digestive): Observable<any> {
-    return this.http.post<Digestive>(`${this.resourceUrl}`, digestive);
+  postData(digestive: DigestiveModel): Observable<DigestiveModel> {
+    return this.http.post<DigestiveModel>(`${this.resourceUrl}`, digestive);
   }
 
-  putData(digestive: Digestive, id: number): Observable<any> {
-    return this.http.put<Digestive>(`${this.resourceUrl}/${id}`, digestive);
+  putData(digestive: DigestiveModel, id: number): Observable<any> {
+    return this.http.put<DigestiveModel>(`${this.resourceUrl}/${id}`, digestive);
   }
 }
