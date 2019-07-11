@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light navbar-expand-md bg-light">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span jhiTranslate="global.title" class="navbar-title">SED</span> <span class="navbar-version">{{version}}</span>
+        <span jhiTranslate="global.title" class="navbar-title">SED</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -79,14 +79,14 @@
                         <a class="dropdown-item" routerLink="symptomes" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <span
-                                jhiTranslate="global.menu.gererMonSED.symptomes">Symptomes</span>
+                                jhiTranslate="global.menu.gererMonSED.symptomes">Ajouter un symptome</span>
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item" routerLink="traitement" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <span
-                                jhiTranslate="global.menu.gererMonSED.traitement">Traitement</span>
+                                jhiTranslate="global.menu.gererMonSED.traitement">Ajouter un traitement</span>
                         </a>
                     </li>
                     <li>
@@ -106,7 +106,7 @@
                     <li>
                         <a class="dropdown-item" routerLink="therapeutique" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <span jhiTranslate="global.menu.gererMonSED.therapeutique">Thérapeutique</span>
+                            <span jhiTranslate="global.menu.gererMonSED.therapeutique">Thérapeutiques</span>
                         </a>
                     </li>
                 </ul>

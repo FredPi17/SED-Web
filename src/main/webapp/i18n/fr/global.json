@@ -22,18 +22,32 @@
         "dmp": "DMP"
       },
       "gererMonSED": {
-        "symptomes": "Symptomes",
-        "traitement": "Traitement",
+        "symptomes": "Ajouter un symptôme",
+        "traitement": "Ajouter un traitement",
         "rdv": "Rendez-vous",
         "repercussions": "Répercussions",
-        "therapeutique": "Thérapeutique"
+        "therapeutique": "Thérapeutiques"
       },
       "InfosSed": {
-        "presentation": "Présentation",
+        "presentation": "Généralités",
         "articles": "Articles"
       },
       "symptomes": {
-        "digestive": "Digestive"
+        "digestive": "Manifestation digestive",
+        "cardio-vasculaire": "Manifestation cardio-vasculaire",
+        "respiratoire": "Manifestation respiratoire",
+        "ORL": "Manifestation ORL",
+        "bucco-dentaire": "Manifestation bucco-dentaire",
+        "urinaire": "Manifestation urinaire",
+        "gynecologique": "Manifestation gynécologique",
+        "cutanee": "Manifestation cutanée",
+        "Ophtalmo": "Manifestation ophtalmologique",
+        "musculaire": "Manifestation musculaire",
+        "osteo-articulaire": "Manifestation ostéo-articulaire",
+        "neurologique": "Manifestation neurologique",
+        "cognitive": "Manifestation cognitive",
+        "psychologique": "Manifestation psychologique",
+        "sommeilEtFatigue": "Manifestation sommeil et fatigue"
       },
       "account": {
         "main": "Compte",

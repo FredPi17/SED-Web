@@ -6,8 +6,46 @@
       "home": "Home",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
+        "dossierMedical": "Medical file",
+        "gererMonSED": "Manage my SED",
+        "InfosSed": "SED info",
         "main": "Entities",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "dossierMedical": {
+        "antecedents": "Antecedents",
+        "traitementsEnCours": "Treatments in progress",
+        "ficheUrgence": "\nEmergency card",
+        "suivi": "SED follow-up",
+        "dmp": "DMP"
+      },
+      "gererMonSED": {
+        "symptomes": "Add a symptom",
+        "traitement": "Add a treatment",
+        "rdv": "Appointment",
+        "repercussions": "Implications",
+        "therapeutique": "Therapeutics"
+      },
+      "InfosSed": {
+        "presentation": "Overview",
+        "articles": "Articles"
+      },
+      "symptomes": {
+        "digestive": "Digestive",
+        "cardio-vasculaire": "Cardiovascular",
+        "respiratoire": "respiratory",
+        "ORL": "ORL",
+        "bucco-dentaire": "Oral",
+        "urinaire": "Urinary",
+        "gynecologique": "Gynecological",
+        "cutanee": "Cutaneous",
+        "Ophtalmo": "Ophthalmic",
+        "musculaire": "Muscular",
+        "osteo-articulaire": "Musculoskeletal",
+        "neurologique": "Neurologic",
+        "cognitive": "Cognitive",
+        "psychologique": "Psychological",
+        "sommeilEtFatigue": "Sleep and fatigue"
       },
       "account": {
         "main": "Account",

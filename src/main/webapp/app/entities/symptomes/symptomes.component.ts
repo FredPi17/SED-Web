@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JhiLanguageHelper } from 'app/core';
 
 @Component({
   selector: 'jhi-symptomes',
@@ -6,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./symptomes.component.scss']
 })
 export class SymptomesComponent implements OnInit {
-  constructor() {}
+  languages: any[];
 
-  ngOnInit() {}
+  constructor(private languageHelper: JhiLanguageHelper) {}
+
+  ngOnInit() {
+    this.languageHelper.getAll().then(languages => {
+      this.languages = languages;
+    });
+  }
 }
