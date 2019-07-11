@@ -13,10 +13,10 @@ import { DatePipe } from '@angular/common';
 })
 export class DigestiveComponent implements OnInit {
   digestive: Digestive;
-  old?: Digestive;
+  old?: Digestive = new Digestive();
   account: Account;
   oldForm: boolean;
-  myDate = new Date();
+  myDate = new Date().toString();
   id: number;
 
   constructor(private datePipe: DatePipe, private accountService: AccountService, protected digestiveService: DigestivesService) {}
@@ -37,6 +37,7 @@ export class DigestiveComponent implements OnInit {
         .then(
           callback => {
             this.compareDates(callback);
+            // @ts-ignore
             this.id = callback.id;
           },
           error => {
@@ -48,7 +49,9 @@ export class DigestiveComponent implements OnInit {
 
   compareDates(callback: Digestive) {
     this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+    // @ts-ignore
     console.log('date du jour: ' + this.myDate + '\n date bdd: ' + callback.dateDuJour);
+    // @ts-ignore
     callback.dateDuJour.includes(this.myDate) ? (this.oldForm = true) : (this.oldForm = false);
     if (this.oldForm) {
       this.old = callback;

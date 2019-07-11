@@ -1,3 +1,171 @@
-<p>
-    cardiovasculaire works!
-</p>
+<h4>Manifestations cardio vasculaire</h4>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="tachycardie" id="tachycardie" type="checkbox" [ngModel]="old.tachycardie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="tachycardie">Tachycardie</label>
+                </div>
+                <div class="form-group">
+                    <input name="tachycardieNb" id="tachycardieNb" type="number" [ngModel]="old.tachycardieNb"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="tachycardieNb">Tachycardie (puls/min)</label>
+                </div>
+                <div class="form-group">
+                    <input name="bradycardie" id="bradycardie" type="checkbox" [ngModel]="old.bradycardie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="bradycardie">Bradycardie</label>
+                </div>
+                <div class="form-group">
+                    <input name="bradycardieNb" id="bradycardieNb" type="number" [ngModel]="old.bradycardieNb"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="bradycardieNb">Bradycardie (puls/min)</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypertension" id="hypertension" type="checkbox" [ngModel]="old.hypertension"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypertension">Hypertension</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypertensionNb" id="hypertensionNb" type="number" [ngModel]="old.hypertensionNb"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypertensionNb">Hypertension (puls/min)</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypotension" id="hypotension" type="checkbox"
+                           [ngModel]="old.hypotension"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypotension">Hypotension</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypotensionNb" id="hypotensionNb" type="number" [ngModel]="old.hypotensionNb"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypotensionNb">Hypotension (puls/min)</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="tachycardiePosturale" id="tachycardiePosturale" type="checkbox"
+                           [ngModel]="old.tachycardiePosturale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="tachycardiePosturale">Tachycardie posturale</label>
+                </div>
+                <div class="form-group">
+                    <input name="tachycardiePosturaleNb" id="tachycardiePosturaleNb" type="checkbox"
+                           [ngModel]="old.tachycardiePosturaleNb"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="tachycardiePosturaleNb">Tachycardie posturale (puls/min)</label>
+                </div>
+                <div class="form-group">
+                    <input name="palpitation" id="palpitation" type="checkbox" [ngModel]="old.palpitation"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="palpitation">Palpitation</label>
+                </div>
+                <div class="form-group">
+                    <input name="arythmie" id="arythmie" type="checkbox" [ngModel]="old.arythmie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="arythmie">Arythmie</label>
+                </div>
+                <div class="form-group">
+                    <input name="marbrures" id="marbrures" type="checkbox" [ngModel]="old.marbrures"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="marbrures">Marbrures</label>
+                </div>
+                <div class="form-group">
+                    <input name="extremiteFroideEtPale" id="extremiteFroideEtPale" type="checkbox"
+                           [ngModel]="old.extremiteFroideEtPale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="extremiteFroideEtPale">Extremité froide et pâle</label>
+                </div>
+                <div class="form-group">
+                    <input name="malaise" id="malaise" type="checkbox" [ngModel]="old.malaise"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="malaise">Malaise</label>
+                </div>
+                <div class="form-group">
+                    <input name="varice" id="varice" type="checkbox" [ngModel]="old.varice"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="varice">Varice</label>
+                </div>
+                <div class="form-group">
+                    <input name="syncope" id="syncope" type="checkbox"
+                           [ngModel]="old.syncope"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="syncope">Syncope</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="doigtEnfle" id="doigtEnfle" type="checkbox"
+                           [ngModel]="old.doigtEnfle"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="doigtEnfle">Doigt enflé</label>
+                </div>
+                <div class="form-group">
+                    <input name="phlebite" id="phlebite" type="checkbox"
+                           [ngModel]="old.phlebite"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="phlebite">Phlébite</label>
+                </div>
+                <div class="form-group">
+                    <input name="gonflementJambeChevillePieds" id="gonflementJambeChevillePieds" type="checkbox"
+                           [ngModel]="old.gonflementJambeChevillePieds"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="gonflementJambeChevillePieds">Gonflement jambe/cheville/pieds</label>
+                </div>
+                <div class="form-group">
+                    <input name="syndromeReynaud" id="syndromeReynaud" type="checkbox" [ngModel]="old.syndromeReynaud"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="syndromeReynaud">Syndrome de reynaud</label>
+                </div>
+                <div class="form-group">
+                    <input name="essouflement" id="essouflement" type="checkbox" [ngModel]="old.essouflement"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="essouflement">Essouflement</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurThoracique" id="douleurThoracique" type="checkbox"
+                           [ngModel]="old.douleurThoracique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurThoracique">Douleur thoracique</label>
+                </div>
+                <div class="form-group">
+                    <input name="evanouissement" id="evanouissement" type="checkbox"
+                           [ngModel]="old.evanouissement"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="evanouissement">Évanouissement</label>
+                </div>
+                <div class="form-group">
+                    <input name="systole" id="systole" type="number" [ngModel]="old.systole"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="systole">Systole</label>
+                </div>
+                <div class="form-group">
+                    <input name="diastole" id="diastole" type="number" [ngModel]="old.diastole"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="diastole">Diastole</label>
+                </div>
+                <div class="form-group">
+                    <input name="pouls" id="pouls" type="number" [ngModel]="old.pouls"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="pouls">Pouls (puls/min)</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <textarea rows="4" cols="50" name="commentaire" placeholder="Entrez votre commentaire ici..."
+                          [ngModel]="old.commentaire"></textarea>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>
