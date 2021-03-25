@@ -1,0 +1,133 @@
+<h4>Manifestations bucco-dentaires</h4>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="douleurDentaire" id="douleurDentaire" type="checkbox" [ngModel]="old.douleurDentaire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurDentaire">Douleur dentaire</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurGingivale" id="douleurGingivale" type="checkbox" [ngModel]="old.douleurGingivale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurGingivale">Douleur gingivale</label>
+                </div>
+                <div class="form-group">
+                    <input name="saignementgingival" id="saignementgingival" type="checkbox" [ngModel]="old.saignementgingival"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="saignementgingival">Saignement gingival</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypersensibiliteDentaire" id="hypersensibiliteDentaire" type="checkbox" [ngModel]="old.hypersensibiliteDentaire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypersensibiliteDentaire">Hypersensibilité dentaire</label>
+                </div>
+                <div class="form-group">
+                    <input name="colletDentaireDouleur" id="colletDentaireDouleur" type="checkbox" [ngModel]="old.colletDentaireDouleur"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="colletDentaireDouleur">Collet dentaire douleur</label>
+                </div>
+                <div class="form-group">
+                    <input name="bruxisme" id="bruxisme" type="checkbox" [ngModel]="old.bruxisme"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="bruxisme">Bruxisme</label>
+                </div>
+                <div class="form-group">
+                    <input name="gingivite" id="gingivite" type="checkbox"
+                           [ngModel]="old.gingivite"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="gingivite">Gingivite</label>
+                </div>
+                <div class="form-group">
+                    <input name="anesthesiePasEfficace" id="anesthesiePasEfficace" type="checkbox" [ngModel]="old.anesthesiePasEfficace"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="anesthesiePasEfficace">Anesthésie pas efficace</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurAbdominale" id="douleurAbdominale" type="checkbox"
+                           [ngModel]="old.douleurAbdominale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurAbdominale">Douleur abdominale</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="alterationGencive" id="alterationGencive" type="checkbox"
+                           [ngModel]="old.alterationGencive"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="alterationGencive">Altération gencive</label>
+                </div>
+                <div class="form-group">
+                    <input name="dechaussementDentaire" id="dechaussementDentaire" type="checkbox"
+                           [ngModel]="old.dechaussementDentaire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="dechaussementDentaire">Déchaussement dentaire</label>
+                </div>
+                <div class="form-group">
+                    <input name="secheresseBuccale" id="secheresseBuccale" type="checkbox" [ngModel]="old.secheresseBuccale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="secheresseBuccale">Sécheresse buccale</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypersialorhee" id="hypersialorhee" type="checkbox" [ngModel]="old.hypersialorhee"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypersialorhee">Hypersialorhée</label>
+                </div>
+                <div class="form-group">
+                    <input name="boutonFievre" id="boutonFievre" type="checkbox" [ngModel]="old.boutonFievre"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="boutonFievre">Bouton de fièvre</label>
+                </div>
+                <div class="form-group">
+                    <input name="mauvaiseHaleine" id="mauvaiseHaleine" type="checkbox" [ngModel]="old.mauvaiseHaleine"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="mauvaiseHaleine">Mauvaise haleine</label>
+                </div>
+                <div class="form-group">
+                    <input name="aphte" id="aphte" type="checkbox" [ngModel]="old.aphte"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="aphte">Aphte</label>
+                </div>
+                <div class="form-group">
+                    <input name="abces" id="abces" type="checkbox" [ngModel]="old.abces"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="abces">Abcès</label>
+                </div>
+                <div class="form-group">
+                    <input name="parodontite" id="parodontite" type="checkbox"
+                           [ngModel]="old.parodontite"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="parodontite">Parodontite</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="emailErode" id="emailErode" type="checkbox"
+                           [ngModel]="old.emailErode"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="emailErode">Email érodé</label>
+                </div>
+                <div class="form-group">
+                    <input name="carie" id="carie" type="checkbox"
+                           [ngModel]="old.carie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="carie">Carie</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <textarea rows="4" cols="50" name="commentaire" placeholder="Entrez votre commentaire ici..."
+                          [ngModel]="old.commentaire"></textarea>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>

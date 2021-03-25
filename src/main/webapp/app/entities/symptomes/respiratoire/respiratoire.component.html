@@ -1,0 +1,146 @@
+<h4>Manifestations respiratoires</h4>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="essouflementEffort" id="essouflementEffort" type="checkbox"
+                           [ngModel]="old.essouflementEffort"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="essouflementEffort">Essouflement effort</label>
+                </div>
+                <div class="form-group">
+                    <input name="essouflementRepos" id="essouflementRepos" type="checkbox"
+                           [ngModel]="old.essouflementRepos"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="essouflementRepos">Essouflement repos</label>
+                </div>
+                <div class="form-group">
+                    <input name="sensationBlocageDiaphragmatique" id="sensationBlocageDiaphragmatique" type="checkbox"
+                           [ngModel]="old.sensationBlocageDiaphragmatique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="sensationBlocageDiaphragmatique">Sensation blocage diaphragmatique</label>
+                </div>
+                <div class="form-group">
+                    <input name="bradyapnee" id="bradyapnee" type="checkbox" [ngModel]="old.bradyapnee"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="bradyapnee">Bradyapnee</label>
+                </div>
+                <div class="form-group">
+                    <input name="tachyapnee" id="tachyapnee" type="checkbox" [ngModel]="old.tachyapnee"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="tachyapnee">Tachyapnee</label>
+                </div>
+                <div class="form-group">
+                    <input name="respirationSifflante" id="respirationSifflante" type="checkbox"
+                           [ngModel]="old.respirationSifflante"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="respirationSifflante">Respiration sifflante</label>
+                </div>
+                <div class="form-group">
+                    <input name="criseRespiratoireAngoissante" id="criseRespiratoireAngoissante" type="checkbox"
+                           [ngModel]="old.criseRespiratoireAngoissante"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="criseRespiratoireAngoissante">Crise respiratoire angoissante</label>
+                </div>
+                <div class="form-group">
+                    <input name="sensationOppressionThoracique" id="sensationOppressionThoracique" type="checkbox"
+                           [ngModel]="old.sensationOppressionThoracique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="sensationOppressionThoracique">Sensation oppression thoracique</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="encombrementBronchique" id="encombrementBronchique" type="checkbox"
+                           [ngModel]="old.encombrementBronchique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="encombrementBronchique">Encombrement bronchique</label>
+                </div>
+                <div class="form-group">
+                    <input name="expectorationSanglante" id="expectorationSanglante" type="checkbox"
+                           [ngModel]="old.expectorationSanglante"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="expectorationSanglante">Expectoration sanglante</label>
+                </div>
+                <div class="form-group">
+                    <input name="blocageRespiratoire" id="blocageRespiratoire" type="checkbox"
+                           [ngModel]="old.blocageRespiratoire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="blocageRespiratoire">Blocage respiratoire</label>
+                </div>
+                <div class="form-group">
+                    <input name="criseAsthme" id="criseAsthme" type="checkbox" [ngModel]="old.criseAsthme"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="criseAsthme">Crise asthme</label>
+                </div>
+                <div class="form-group">
+                    <input name="touxSeche" id="touxSeche" type="checkbox"
+                           [ngModel]="old.touxSeche"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="touxSeche">Toux seche</label>
+                </div>
+                <div class="form-group">
+                    <input name="touxGrasse" id="touxGrasse" type="checkbox" [ngModel]="old.touxGrasse"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="touxGrasse">Toux grasse</label>
+                </div>
+                <div class="form-group">
+                    <input name="dysphonie" id="dysphonie" type="checkbox" [ngModel]="old.dysphonie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="dysphonie">Dysphonie</label>
+                </div>
+
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="aphonie" id="aphonie" type="checkbox"
+                           [ngModel]="old.aphonie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="aphonie">Aphonie</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurRespiratoire" id="douleurRespiratoire" type="checkbox"
+                           [ngModel]="old.douleurRespiratoire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurRespiratoire">Douleur respiratoire</label>
+                </div>
+                <div class="form-group">
+                    <input name="infectionVoieAerienneSuperieur" id="infectionVoieAerienneSuperieur" type="checkbox"
+                           [ngModel]="old.infectionVoieAerienneSuperieur"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="infectionVoieAerienneSuperieur">Infection voie aerienne superieure</label>
+                </div>
+                <div class="form-group">
+                    <input name="bronchite" id="bronchite" type="checkbox"
+                           [ngModel]="old.bronchite"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="bronchite">Bronchite</label>
+                </div>
+                <div class="form-group">
+                    <input name="pneumopathie" id="pneumopathie" type="checkbox" [ngModel]="old.pneumopathie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="pneumopathie">Pneumopathie</label>
+                </div>
+                <div class="form-group">
+                    <input name="saturationOxygene" id="saturationOxygene" type="number"
+                           [ngModel]="old.saturationOxygene"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="saturationOxygene">Saturation oxygene (%)</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <textarea rows="4" cols="50" name="commentaire" placeholder="Entrez votre commentaire ici..."
+                          [ngModel]="old.commentaire"></textarea>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </div>
+        </div>
+    </form>

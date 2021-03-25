@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light navbar-expand-md bg-light">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span jhiTranslate="global.title" class="navbar-title">SED</span> <span class="navbar-version">{{version}}</span>
+        <span jhiTranslate="global.title" class="navbar-title">SED</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -16,19 +16,145 @@
                     </span>
                 </a>
             </li>
-            <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);"
+                   id="dossierMedical-menu">
                     <span>
                         <fa-icon icon="th-list"></fa-icon>
-                        <span jhiTranslate="global.menu.entities.main">
-                            Entities
+                        <span jhiTranslate="global.menu.entities.dossierMedical">
+                            Dossier médical
                         </span>
                     </span>
                 </a>
-                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
-                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="dossierMedical-menu">
+                    <li>
+                        <a class="dropdown-item" routerLink="antecedents" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span jhiTranslate="global.menu.dossierMedical.antecedents">Antecedents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="traitements-en-cours" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.dossierMedical.traitementsEnCours">Traitement en cours</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="fiche-urgence" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.dossierMedical.ficheUrgence">Fiche d'urgence</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="suivi" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.dossierMedical.suivi">Suivi SED</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="dmp" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.dossierMedical.dmp">DMP</span>
+                        </a>
+                    </li>
                 </ul>
+            </li>
+            <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);"
+                   id="gererMonSed-menu">
+                    <span>
+                        <fa-icon icon="th-list"></fa-icon>
+                        <span jhiTranslate="global.menu.entities.gererMonSED">
+                            Gérer mon SED
+                        </span>
+                    </span>
+                </a>
+                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="gererMonSed-menu">
+                    <li>
+                        <a class="dropdown-item" routerLink="symptomes" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.gererMonSED.symptomes">Ajouter un symptome</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="traitement" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.gererMonSED.traitement">Ajouter un traitement</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="rendez-vous" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.gererMonSED.rdv">Rendez-vous</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="repercussions" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.gererMonSED.repercussions">Repercussions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="therapeutique" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span jhiTranslate="global.menu.gererMonSED.therapeutique">Thérapeutiques</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li *ngSwitchCase="true" class="nav-item" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="alertes" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="bell"></fa-icon>
+                        <span jhiTranslate="global.menu.alertes">Alertes</span>
+                    </span>
+                </a>
+            </li>
+            <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);"
+                   id="InfosSed-menu">
+                    <span>
+                       <fa-icon icon="th-list"></fa-icon>
+                        <span jhiTranslate="global.menu.entities.InfosSed">
+                            Infos SED
+                        </span>
+                    </span>
+                </a>
+                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="InfosSed-menu">
+                    <li>
+                        <a class="dropdown-item" routerLink="presentation" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.InfosSed.presentation">Présentation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="articles" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <span
+                                jhiTranslate="global.menu.InfosSed.articles">Articles</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li *ngSwitchCase="true" class="nav-item" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="faq" (click)="collapseNavbar()">
+                    <span>
+                        <span jhiTranslate="global.menu.faq">FAQ</span>
+                    </span>
+                </a>
             </li>
             <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">

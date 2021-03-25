@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <h3><b>Entrer un nouveau traitement</b></h3>
+    <hr>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input name="nom" id="nom" type="text" ngModel
+                       [ngModelOptions]="{standalone:false}">
+            </div>
+            <div class="form-group">
+                <label for="dosage">Dosage</label>
+                <input name="dosage" id="dosage" type="text" ngModel
+                       [ngModelOptions]="{standalone:false}">
+            </div>
+            <div class="form-group">
+                <label for="posologie">Posologie</label>
+                <input name="posologie" id="posologie" type="text" ngModel
+                       [ngModelOptions]="{standalone:false}">
+            </div>
+            <div class="form-group">
+                <label for="dateDebut">Date de début</label>
+                <input name="dateDebut" id="dateDebut" type="date" ngModel
+                       [ngModelOptions]="{standalone:false}">
+            </div>
+            <div class="form-group">
+                <label for="dateDeFin">Date de fin</label>
+                <input name="dateDeFin" id="dateDeFin" type="date" ngModel
+                       [ngModelOptions]="{standalone:false}">
+            </div>
+            <div class="form-group" style="margin-left:10px;">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div>
+        </div>
+    </form>
+    <br/>
+    <hr>
+    <h3><b>Vos traitements en cours</b></h3>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Dosage</th>
+            <th>Posologie</th>
+            <th>Date de début</th>
+            <th>Date de fin</th>
+            <th>Désactiver</th>
+        </tr>
+        </thead>
+        <tbody *ngIf="listOfTraitements">
+        <tr *ngFor="let traitement of listOfTraitements">
+            <ng-container *ngIf="traitement.isActive">
+                <td>{{traitement.nom}}</td>
+                <td>{{traitement.dosage}}</td>
+                <td>{{traitement.posologie}}</td>
+                <td>{{traitement.dateDebut}}</td>
+                <td>{{traitement.dateDeFin}}</td>
+                <td><input class="btn btn-danger" type="button" value="Supprimer"
+                           (click)="deactivate(traitement.id)"></td>
+            </ng-container>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,112 @@
+<h3>FAQ</h3>
+<div class="container">
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" (click)="isCollapsedFirst = !isCollapsedFirst"
+                            [attr.aria-expanded]="!isCollapsedFirst" aria-controls="collapseOne">
+                        Q: Comment savoir si j’ai le SED?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"
+                 [ngbCollapse]="isCollapsedFirst">
+                <div class="card-body">
+                    Nous vous invitons à parler de votre questionnement à votre médecin traitant. Ce dernier pourra vous
+                    rediriger auprès des centres de références et de compétences dont les adresses sont présentes dans
+                    la rubrique « généralités » de l’onglet « Infos SED ». Pour rappel, les critères diagnostics actuels
+                    sont ceux de New York 2017, présents dans la même rubrique.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" (click)="isCollapsedSecond = !isCollapsedSecond"
+                            [attr.aria-expanded]="!isCollapsedSecond" aria-controls="collapseTwo">
+                        Q: Comment rentrer un symptôme pour en faire le suivi ?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"
+                 [ngbCollapse]="isCollapsedSecond">
+                <div class="card-body">
+                    Pour ce faire, rien de plus simple. Rendez vous dans l’onglet « Gérer mon SED » puis dans « Ajouter
+                    un symptômes». Pour d’avantage de simplicité, ces derniers ont été organisés par catégories (
+                    Système cardiovaculaire, appareil urinaire, système ostéo-articulaire, etc…)
+                    <br/>Note: certains symptômes apparaissent d’une couleur différente. Il s’agit là de diagnostics
+                    médicaux
+                    qui ne peuvent être posés que par un médecin. En effet, si vous êtes sujet par exemple aux sinusites
+                    à répétition ou encore aux subluxations, il y a de grandes chances qu’avec le temps vous en
+                    reconnaissez les signes et soyez en mesure de les détecter par vous-même. Si vous n’avez pas
+                    effectué de visite chez le médecin, il parait malgré tout normal que vous souhaitiez les noter pour
+                    vous en rappeler. Cependant, AppliSED se désengage de toute responsabilité sur la validation de ces
+                    diagnostics. Seule la responsabilité de l’utilisateur est engagée.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" (click)="isCollapsedThird = !isCollapsedThird"
+                            [attr.aria-expanded]="!isCollapsedThird" aria-controls="collapseThree">
+                        Q: Comment ajouter un traitement médicamenteux ?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion"
+                 [ngbCollapse]="isCollapsedThird">
+                <div class="card-body">
+                    <p>
+                        Pour ce faire, il faut se rendre dans la rubrique « Ajouter un traitement » présente dans
+                        l’onglet « Gérer mon SED ».
+                    </p>
+                    <p>
+                        Il vous sera alors demandé de rentrer manuellement le nom du médicament. Essayez, si possible,
+                        de saisir la DCI (Dénomination Commune Internationale) du médicament plutôt que son nom
+                        commercial,
+                        <br/>Ex: Paracétamol (DCI ) plutôt que Doliprane® ( nom commercial ).
+                    </p>
+                    <p>
+                        La dosage vous est ensuite demandé. Il s’agit de la description quantitative de ce que contient
+                        un comprimé/ ampoule/ gélule.
+                        <br/>Ex: 500mg
+                    </p>
+                    <p>
+                        La posologie désigne la quantité et le rythme d’administration prescrite de manière
+                        individualisée par votre médecin.
+                        <br/>Ex:
+                        <br/>- 2 gélules matin, midi, soir
+                        <br/>- au besoin, maximum 3 comprimés par jour espacés de 6h minimum
+                    </p>
+                    <p>
+                        Enfin vous pouvez indiquer la date de commencement et de fin de votre traitement, ce qui vous
+                        permettra lors de la relecture de vos données de faire la corrélation entre une prise de
+                        médicaments et une amélioration ou non de la symptomatique.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" (click)="isCollapsedFourth = !isCollapsedFourth"
+                            [attr.aria-expanded]="!isCollapsedFourth" aria-controls="collapseFour">
+                        Q: Mes données personnelles sont-elles sécurisées ?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion"
+                 [ngbCollapse]="isCollapsedFourth">
+                <div class="card-body">
+                    Oui, nous en avons fait une priorité et avons mis en place les outils nécessaires pour que vos
+                    données soient sécurisées. La base de données stockant vos informations ainsi que les communications
+                    entre l’application et la base de données sont toutes deux chiffrées, assurant ainsi la sécurité de
+                    vos données personnelles.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

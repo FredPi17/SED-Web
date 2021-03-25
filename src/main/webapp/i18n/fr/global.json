@@ -4,10 +4,50 @@
     "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
     "menu": {
       "home": "Accueil",
+      "alertes": "Alertes",
+      "faq": "FAQ",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
+        "dossierMedical": "Dossier médical",
+        "gererMonSED": "Gérer mon SED",
+        "InfosSed": "Infos SED",
         "main": "Entités",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+      },
+      "dossierMedical": {
+        "antecedents": "Antécédents",
+        "traitementsEnCours": "Traitements en cours",
+        "ficheUrgence": "Fiche d'urgence",
+        "suivi": "Suivi SED",
+        "dmp": "DMP"
+      },
+      "gererMonSED": {
+        "symptomes": "Ajouter un symptôme",
+        "traitement": "Ajouter un traitement",
+        "rdv": "Rendez-vous",
+        "repercussions": "Répercussions",
+        "therapeutique": "Thérapeutiques"
+      },
+      "InfosSed": {
+        "presentation": "Généralités",
+        "articles": "Articles"
+      },
+      "symptomes": {
+        "digestive": "Manifestation digestive",
+        "cardio-vasculaire": "Manifestation cardio-vasculaire",
+        "respiratoire": "Manifestation respiratoire",
+        "ORL": "Manifestation ORL",
+        "bucco-dentaire": "Manifestation bucco-dentaire",
+        "urinaire": "Manifestation urinaire",
+        "gynecologique": "Manifestation gynécologique",
+        "cutanee": "Manifestation cutanée",
+        "Ophtalmo": "Manifestation ophtalmologique",
+        "musculaire": "Manifestation musculaire",
+        "osteo-articulaire": "Manifestation ostéo-articulaire",
+        "neurologique": "Manifestation neurologique",
+        "cognitive": "Manifestation cognitive",
+        "psychologique": "Manifestation psychologique",
+        "sommeilEtFatigue": "Manifestation sommeil et fatigue"
       },
       "account": {
         "main": "Compte",

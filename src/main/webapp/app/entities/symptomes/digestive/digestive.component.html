@@ -1,0 +1,226 @@
+<h4>Manifestations digestives</h4>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="absenceSatiete" id="absenceSatiete" type="checkbox" [ngModel]="old.absenceSatiete"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="absenceSatiete">Absence satieté</label>
+                </div>
+                <div class="form-group">
+                    <input name="aerophagie" id="aerophagie" type="checkbox" [ngModel]="old.aerophagie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="aerophagie">Aérophagie</label>
+                </div>
+                <div class="form-group">
+                    <input name="amaigrissement" id="amaigrissement" type="checkbox" [ngModel]="old.amaigrissement"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="amaigrissement">Amaigrissement</label>
+                </div>
+                <div class="form-group">
+                    <input name="ballonements" id="ballonements" type="checkbox" [ngModel]="old.ballonements"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="ballonements">Ballonement</label>
+                </div>
+                <div class="form-group">
+                    <input name="brulureEstomac" id="brulureEstomac" type="checkbox" [ngModel]="old.brulureEstomac"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="brulureEstomac">Brulure d'estomac</label>
+                </div>
+                <div class="form-group">
+                    <input name="constipation" id="constipation" type="checkbox" [ngModel]="old.constipation"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="constipation">Constipation</label>
+                </div>
+                <div class="form-group">
+                    <input name="crampeIntestinale" id="crampeIntestinale" type="checkbox"
+                           [ngModel]="old.crampeIntestinale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="crampeIntestinale">Crampe intestinale</label>
+                </div>
+                <div class="form-group">
+                    <input name="criseHemorroide" id="criseHemorroide" type="checkbox" [ngModel]="old.criseHemorroide"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="criseHemorroide">Crise hémorroïde</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurAbdominale" id="douleurAbdominale" type="checkbox"
+                           [ngModel]="old.douleurAbdominale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurAbdominale">Douleur abdominale</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="douleurEpigastrique" id="douleurEpigastrique" type="checkbox"
+                           [ngModel]="old.douleurEpigastrique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurEpigastrique">Douleur épigastrique</label>
+                </div>
+                <div class="form-group">
+                    <input name="douleurVesiculaire" id="douleurVesiculaire" type="checkbox"
+                           [ngModel]="old.douleurVesiculaire"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="douleurVesiculaire">Douleur vésiculaire</label>
+                </div>
+                <div class="form-group">
+                    <input name="dysphagie" id="dysphagie" type="checkbox" [ngModel]="old.dysphagie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="dysphagie">Dysphagie</label>
+                </div>
+                <div class="form-group">
+                    <input name="eructation" id="eructation" type="checkbox" [ngModel]="old.eructation"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="eructation">Eructation</label>
+                </div>
+                <div class="form-group">
+                    <input name="estomacGonfle" id="estomacGonfle" type="checkbox" [ngModel]="old.estomacGonfle"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="estomacGonfle">Estomac gonflé</label>
+                </div>
+                <div class="form-group">
+                    <input name="fausseRoute" id="fausseRoute" type="checkbox" [ngModel]="old.fausseRoute"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="fausseRoute">Fausse route</label>
+                </div>
+                <div class="form-group">
+                    <input name="gastroParesie" id="gastroParesie" type="checkbox" [ngModel]="old.gastroParesie"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="gastroParesie">Gastro parésie</label>
+                </div>
+                <div class="form-group">
+                    <input name="gaz" id="gaz" type="checkbox" [ngModel]="old.gaz"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="gaz">Gaz</label>
+                </div>
+                <div class="form-group">
+                    <input name="hypoglycemieReactionnelle" id="hypoglycemieReactionnelle" type="checkbox"
+                           [ngModel]="old.hypoglycemieReactionnelle"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="hypoglycemieReactionnelle">Hypoglycemie réactionnelle</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="imperiositeFecale" id="imperiositeFecale" type="checkbox"
+                           [ngModel]="old.imperiositeFecale"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="imperiositeFecale">Impériosite fécale</label>
+                </div>
+                <div class="form-group">
+                    <input name="impossibiliteAlimenter" id="impossibiliteAlimenter" type="checkbox"
+                           [ngModel]="old.impossibiliteAlimenter"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="impossibiliteAlimenter">Impossibilité de s'alimenter</label>
+                </div>
+                <div class="form-group">
+                    <input name="indigestion" id="indigestion" type="checkbox" [ngModel]="old.indigestion"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="indigestion">Indigestion</label>
+                </div>
+                <div class="form-group">
+                    <input name="mauvaiseHaleine" id="mauvaiseHaleine" type="checkbox" [ngModel]="old.mauvaiseHaleine"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="mauvaiseHaleine">Mauvaise haleine</label>
+                </div>
+                <div class="form-group">
+                    <input name="nausees" id="nausees" type="checkbox" [ngModel]="old.nausees"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="nausees">Nausées</label>
+                </div>
+                <div class="form-group">
+                    <input name="perteAppetit" id="perteAppetit" type="checkbox" [ngModel]="old.perteAppetit"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="perteAppetit">Perte de l'appetit</label>
+                </div>
+                <div class="form-group">
+                    <input name="pesanteurGastrique" id="pesanteurGastrique" type="checkbox"
+                           [ngModel]="old.pesanteurGastrique"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="pesanteurGastrique">Pesanteur gastrique</label>
+                </div>
+                <div class="form-group">
+                    <input name="prisePoids" id="prisePoids" type="checkbox" [ngModel]="old.prisePoids"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="prisePoids">Prise de poids</label>
+                </div>
+                <div class="form-group">
+                    <input name="regurgitation" id="regurgitation" type="checkbox" [ngModel]="old.regurgitation"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="regurgitation">Régurgitation</label>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="form-group">
+                    <input name="rgo" id="rgo" type="checkbox" [ngModel]="old.rgo"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="rgo">Reflu Gastro Oesophagien</label>
+                </div>
+                <div class="form-group">
+                    <input name="saignementDigestifBas" id="saignementDigestifBas" type="checkbox"
+                           [ngModel]="old.saignementDigestifBas"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="saignementDigestifBas">Saignement digestif bas</label>
+                </div>
+                <div class="form-group">
+                    <input name="saignementDigestifHaut" id="saignementDigestifHaut" type="checkbox"
+                           [ngModel]="old.saignementDigestifHaut"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="saignementDigestifHaut">Saignement digestif haut</label>
+                </div>
+                <div class="form-group">
+                    <input name="satietePrecoce" id="satietePrecoce" type="checkbox" [ngModel]="old.satietePrecoce"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="satietePrecoce">Satieté précoce</label>
+                </div>
+                <div class="form-group">
+                    <input name="selleLiquide" id="selleLiquide" type="checkbox" [ngModel]="old.selleLiquide"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="selleLiquide">Selle liquide</label>
+                </div>
+                <div class="form-group">
+                    <input name="sensationBrulureOesophage" id="sensationBrulureOesophage" type="checkbox"
+                           [ngModel]="old.sensationBrulureOesophage"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="sensationBrulureOesophage">Sensation de brûlure de l'oesophage</label>
+                </div>
+                <div class="form-group">
+                    <input name="sensationFaimDouloureuse" id="sensationFaimDouloureuse" type="checkbox"
+                           [ngModel]="old.sensationFaimDouloureuse"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="sensationFaimDouloureuse">Sensation de faim douloureuse</label>
+                </div>
+                <div class="form-group">
+                    <input name="soifPermanente" id="soifPermanente" type="checkbox" [ngModel]="old.soifPermanente"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="soifPermanente">Soif permanente</label>
+                </div>
+                <div class="form-group">
+                    <input name="spasmeIntestinaux" id="spasmeIntestinaux" type="checkbox"
+                           [ngModel]="old.spasmeIntestinaux"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="spasmeIntestinaux">Spasme intestinaux</label>
+                </div>
+                <div class="form-group">
+                    <input name="vomissements" id="vomissements" type="checkbox" [ngModel]="old.vomissements"
+                           [ngModelOptions]="{standalone:false}">
+                    <label for="vomissements">Vomissements</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <textarea rows="4" cols="50" name="commentaire" placeholder="Entrez votre commentaire ici..."
+                          [ngModel]="old.commentaire"></textarea>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>
